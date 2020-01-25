@@ -85,19 +85,20 @@ header {
 	width: 900px;
 	border-bottom: 2px solid black;
 }
+/* ^ Some padding on this element would make it feel less cramped */
 
 header nav {
 	display: flex;
 	width:100%;
 	flex-flow: row wrap;
 	justify-content: space-between;
-
 	background: rgb(31, 111, 177);
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
-	
+	top: 0;	
 }
+/* ^ Try centering the links vertically with flexbox; on another note, I love how the blue and green match the images */
+/* I would also experiment with the 'fixed' postion. With sticky, the navbar only reaches the end of its parent element before it stops scrolling with the window, whereas fixed lets it stay in the same position the entire way down. It requires a little finagling but I use it a lot. */
 
 header img.logo {
 	display: flex;
